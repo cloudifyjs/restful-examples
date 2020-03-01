@@ -1,0 +1,21 @@
+service: serverless-simple-http-endpoint
+
+frameworkVersion: ">=1.1.0 <2.0.0"
+
+provider:
+  name: aws
+  runtime: nodejs12.x
+
+functions:
+  ping:
+    handler: handler.ping
+    events:
+      - http:
+          path: ping
+          method: get
+  error:
+    handler: handler.error
+    events:
+      - http:
+          path: error
+          method: get

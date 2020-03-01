@@ -1,0 +1,10 @@
+{
+  "name": "logging-example",
+  "version": "1.0.0",
+  "description": "Example demonstrates how to setup logging",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@cloudifyjs/restful": "0.0.5"
+  }
+}
