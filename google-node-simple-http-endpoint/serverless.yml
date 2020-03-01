@@ -1,0 +1,24 @@
+service: node-simple-http-endpoint # NOTE: Don't put the word "google" in here
+
+provider:
+  name: google
+  stage: dev
+  runtime: nodejs8
+  region: us-central1
+  project: probable-axon-269320
+  credentials: ~/.gcloud/serverless-account.json # path must be absolute
+
+plugins:
+  - serverless-google-cloudfunctions
+
+package:
+  exclude:
+    - node_modules/**
+    - .gitignore
+    - .git/**
+
+functions:
+  helloWorld:
+    handler: http
+    events:
+      - http: path
