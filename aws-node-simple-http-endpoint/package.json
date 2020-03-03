@@ -5,6 +5,6 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@cloudifyjs/restful": "0.0.5"
+    "@cloudifyjs/restful": "^0.1.1"
   }
 }
